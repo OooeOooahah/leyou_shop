@@ -15,6 +15,9 @@ eureka:
 zuul:
   prefix: /api # 添加路由前缀
   retryable: true
+  routes:
+    item-service: /item/**
+#    将 item-serive 添加到路由规则
 ribbon:
   ConnectTimeout: 250 # 连接超时时间(ms)
   ReadTimeout: 2000 # 通信超时时间(ms)

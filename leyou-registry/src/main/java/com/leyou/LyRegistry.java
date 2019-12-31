@@ -9,6 +9,7 @@ import org.springframework.cloud.netflix.eureka.server.EnableEurekaServer;
  *
  * @author "吴"
  */
+
 @SpringBootApplication
 @EnableEurekaServer
 public class LyRegistry {

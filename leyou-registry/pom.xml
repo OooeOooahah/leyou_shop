@@ -4,13 +4,12 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
         <artifactId>com.qingke.leyou</artifactId>
-        <groupId>leyou_parent</groupId>
+        <groupId>com.qingke.leyou.parent</groupId>
         <version>1.0-SNAPSHOT</version>
         <relativePath>../leyou-parent/pom.xml</relativePath>
     </parent>
     <modelVersion>4.0.0</modelVersion>
     <artifactId>com.qingke.leyou.registy</artifactId>
-
     <dependencies>
         <dependency>
             <groupId>org.springframework.cloud</groupId>

@@ -3,21 +3,16 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>com.qingke.leyou</artifactId>
-        <groupId>com.qingke.leyou.parent</groupId>
+        <artifactId>ly-item</artifactId>
+        <groupId>com.qingke.leyou.service</groupId>
         <version>1.0-SNAPSHOT</version>
-        <relativePath>../leyou-parent/pom.xml</relativePath>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-    <packaging>pom</packaging>
 
-<!--    乐友 item模块引用的-->
-    <modules>
-        <module>ly-item-interface</module>
-        <module>lyi-tem-service</module>
-    </modules>
     <groupId>com.qingke.leyou.service</groupId>
-    <artifactId>ly-item</artifactId>
+    <artifactId>ly-item-interface</artifactId>
     <version>1.0-SNAPSHOT</version>
+
+
 
 </project>
