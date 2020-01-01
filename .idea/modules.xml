@@ -6,6 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/leyou-item/leyou-item.iml" filepath="$PROJECT_DIR$/leyou-item/leyou-item.iml" />
       <module fileurl="file://$PROJECT_DIR$/leyou-parent/leyou-parent.iml" filepath="$PROJECT_DIR$/leyou-parent/leyou-parent.iml" />
       <module fileurl="file://$PROJECT_DIR$/leyou-registry/leyou-registry.iml" filepath="$PROJECT_DIR$/leyou-registry/leyou-registry.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ly-common/ly-common.iml" filepath="$PROJECT_DIR$/ly-common/ly-common.iml" />
       <module fileurl="file://$PROJECT_DIR$/leyou-item/ly-item-interface/ly-item-interface.iml" filepath="$PROJECT_DIR$/leyou-item/ly-item-interface/ly-item-interface.iml" />
       <module fileurl="file://$PROJECT_DIR$/leyou-item/lyi-tem-service/lyi-tem-service.iml" filepath="$PROJECT_DIR$/leyou-item/lyi-tem-service/lyi-tem-service.iml" />
     </modules>

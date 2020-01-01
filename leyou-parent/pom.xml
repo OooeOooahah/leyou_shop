@@ -17,6 +17,7 @@
     <module>../leyou-registry</module>
     <module>../leyou-gateway</module>
     <module>../leyou-item</module>
+    <module>../ly-common</module>
   </modules>
   <packaging>pom</packaging>
   <name>com.qingke.leyou</name>

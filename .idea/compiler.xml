@@ -9,6 +9,7 @@
         <module name="ly-item-interface" />
         <module name="lyi-tem-service" />
         <module name="leyou-gateway" />
+        <module name="ly-common" />
         <module name="leyou-registry" />
       </profile>
     </annotationProcessing>
@@ -18,6 +19,7 @@
       <module name="leyou-item" target="1.8" />
       <module name="leyou-parent" target="1.8" />
       <module name="leyou-registry" target="1.8" />
+      <module name="ly-common" target="1.8" />
       <module name="ly-item-interface" target="1.8" />
       <module name="lyi-tem-service" target="1.8" />
     </bytecodeTargetLevel>
@@ -28,6 +30,7 @@
       <module name="leyou-gateway" options="-parameters" />
       <module name="leyou-item" options="-parameters" />
       <module name="leyou-registry" options="-parameters" />
+      <module name="ly-common" options="-parameters" />
       <module name="ly-item-interface" options="-parameters" />
       <module name="lyi-tem-service" options="-parameters" />
     </option>

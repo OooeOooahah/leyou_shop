@@ -17,6 +17,7 @@ zuul:
   retryable: true
   routes:
     item-service: /item/**
+
 #    将 item-serive 添加到路由规则
 ribbon:
   ConnectTimeout: 250 # 连接超时时间(ms)
