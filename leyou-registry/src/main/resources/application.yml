@@ -8,4 +8,4 @@ eureka:
     service-url:
       defaultZone: http://127.0.0.1:10086/eurake
     fetch-registry: false
-    register-with-eurake: false
+    register-with-eureka: false

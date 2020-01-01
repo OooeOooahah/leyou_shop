@@ -3,30 +3,29 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-parent</artifactId>
+    <version>2.1.9.RELEASE</version>
+    <relativePath/> <!-- lookup parent from repository -->
+  </parent>
 
   <groupId>com.qingke.leyou.parent</groupId>
   <artifactId>com.qingke.leyou</artifactId>
   <version>1.0-SNAPSHOT</version>
   <modules>
     <module>../leyou-registry</module>
-      <module>../leyou-gateway</module>
+    <module>../leyou-gateway</module>
     <module>../leyou-item</module>
   </modules>
   <packaging>pom</packaging>
   <name>com.qingke.leyou</name>
   <!-- FIXME change it to the project's website -->
-  <url>http://www.example.com</url>
-  <parent>
-    <groupId>org.springframework.boot</groupId>
-    <artifactId>spring-boot-starter-parent</artifactId>
-    <version>2.2.2.RELEASE</version>
-    <relativePath/> <!-- lookup parent from repository -->
-  </parent>
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     <java.version>1.8</java.version>
-    <spring-cloud.version>Hoxton.SR1</spring-cloud.version>
+    <spring-cloud.version>Greenwich.SR3</spring-cloud.version>
     <mapper.starter.version>2.0.3</mapper.starter.version>
     <mysql.version>8.0.11</mysql.version>
     <pageHelper.starter.version>1.2.5</pageHelper.starter.version>
@@ -38,11 +37,18 @@
 
   <dependencyManagement>
     <dependencies>
-      <!-- springCloud -->
+      <!-- https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-dependencies -->
       <dependency>
         <groupId>org.springframework.cloud</groupId>
         <artifactId>spring-cloud-dependencies</artifactId>
-        <version>${spring-cloud.version}</version>
+        <version>Greenwich.SR3</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+      <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-dependencies</artifactId>
+        <version>2.1.9.RELEASE</version>
         <type>pom</type>
         <scope>import</scope>
       </dependency>
@@ -70,20 +76,19 @@
         <artifactId>fastdfs-client</artifactId>
         <version>${fastDFS.client.version}</version>
       </dependency>
+      <dependency>
+        <groupId>org.apache.commons</groupId>
+        <artifactId>commons-lang3</artifactId>
+        <version>3.4</version>
+      </dependency>
+      <dependency>
+        <groupId>org.projectlombok</groupId>
+        <artifactId>lombok</artifactId>
+        <version>${project.lombok}</version>
+      </dependency>
     </dependencies>
   </dependencyManagement>
-  <dependencies>
-    <dependency>
-      <groupId>org.apache.commons</groupId>
-      <artifactId>commons-lang3</artifactId>
-      <version>3.4</version>
-    </dependency>
-    <dependency>
-      <groupId>org.projectlombok</groupId>
-      <artifactId>lombok</artifactId>
-      <version>${project.lombok}</version>
-    </dependency>
-  </dependencies>
+
 
   <build>
 <!--    <pluginManagement>&lt;!&ndash; lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) &ndash;&gt;-->
