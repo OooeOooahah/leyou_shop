@@ -1,5 +1,6 @@
-package com.leyou.service;
+package com.leyou;
 
+import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
@@ -15,6 +16,7 @@ import javax.sql.DataSource;
 
 @SpringBootApplication(exclude = DataSourceAutoConfiguration.class)
 @EnableDiscoveryClient //能够被发现
+@MapperScan(value={"com.leyou.mapper"}) //配置mapper扫描
 public class LyItemService {
     public static void main(String[] args) {
         SpringApplication.run(LyItemService.class);
